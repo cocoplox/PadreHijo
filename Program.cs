@@ -1,6 +1,4 @@
-﻿using System;
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
@@ -12,7 +10,7 @@ class Program
         }
         Console.WriteLine("***************************************");
 
-        for(int i = 0; i  <= 5; i++)
+        for (int i = 0; i <= 5; i++)
         {
             Console.WriteLine("Viva España: Numero " + i);
         }
