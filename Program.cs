@@ -2,18 +2,13 @@
 {
     static void Main(string[] args)
     {
-        for (int i = 0; i < 5; i++)
+        string filename = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "filter.txt");
+        if (File.Exists(filename))
         {
-            Console.WriteLine("Hola desde la iteracion: " + i);
-
-
+            string content = File.ReadAllText(filename);
+            Console.WriteLine(content);
         }
-        Console.WriteLine("***************************************");
-
-        for (int i = 0; i <= 5; i++)
-        {
-            Console.WriteLine("Viva España: Numero " + i);
-        }
+        Console.WriteLine(filename);
     }
 
 }
